@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mar y Campo - Terrenos exclusivos en un entorno natural privilegiado. Inversión inteligente con visión de futuro.">
+    <title>Mar y Campo | Terrenos con Visión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">Mar y Campo</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#zona" class="nav-link">La Zona</a></li>
+                <li><a href="#inversion" class="nav-link">Inversión</a></li>
+                <li><a href="#proyecto" class="nav-link">Proyecto</a></li>
+                <li><a href="#terrenos" class="nav-link">Terrenos</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#masterplan" class="nav-link">Masterplan 360</a></li>
+                <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="hero">
+        <div class="carousel" id="heroCarousel">
+            <div class="carousel-slides">
+                <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1920&q=80');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1920&q=80');">
+                    <div class="slide-overlay"></div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Anterior">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            <button class="carousel-btn carousel-next" aria-label="Siguiente">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="0" aria-label="Slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Slide 3"></button>
+                <button class="indicator" data-slide="3" aria-label="Slide 4"></button>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Mar y Campo</h1>
+            <p class="hero-subtitle">Donde la tierra encuentra su valor</p>
+            <a href="#contacto" class="btn btn-primary">Conocer más</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Descubre</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Sobre la Zona -->
+    <section class="section section-zona" id="zona">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">El Entorno</span>
+                <h2 class="section-title">Una ubicación privilegiada</h2>
+                <p class="section-subtitle">Un lugar donde la naturaleza y la accesibilidad se encuentran en perfecto equilibrio</p>
+            </div>
+            <div class="zona-grid">
+                <div class="zona-content">
+                    <p class="zona-text">
+                        Situada en una de las zonas de mayor proyección de la región, Mar y Campo ofrece
+                        el equilibrio perfecto entre tranquilidad rural y conectividad urbana. A pocos
+                        minutos de servicios esenciales, pero lo suficientemente apartado para disfrutar
+                        de la serenidad del campo.
+                    </p>
+                    <div class="zona-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Accesos Estratégicos</h4>
+                                <p>Conectividad vial en constante mejora</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5"/>
+                                    <path d="M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Clima Privilegiado</h4>
+                                <p>Temperaturas agradables todo el año</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                                    <polyline points="9,22 9,12 15,12 15,22"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Servicios Cercanos</h4>
+                                <p>Comercios, salud y educación accesibles</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Entorno Natural</h4>
+                                <p>Paisajes preservados y aire puro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zona-map">
+                    <div class="map-placeholder">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <p>Mapa de ubicación</p>
+                        <span>Próximamente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inversión & Plusvalía -->
+    <section class="section section-inversion" id="inversion">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visión de Futuro</span>
+                <h2 class="section-title">Inversión con fundamento</h2>
+                <p class="section-subtitle">La tierra bien ubicada ha demostrado históricamente ser uno de los activos más sólidos</p>
+            </div>
+            <div class="inversion-grid">
+                <div class="inversion-card">
+                    <div class="inversion-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Escasez del suelo</h3>
+                    <p>Los terrenos bien ubicados son un recurso finito. La disponibilidad de tierra con las características adecuadas disminuye naturalmente con el tiempo.</p>
+                </div>
+                <div class="inversion-card">
+                    <div class="inversion-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 20V10"/>
+                            <path d="M18 20V4"/>
+                            <path d="M6 20v-4"/>
+                        </svg>
+                    </div>
+                    <h3>Desarrollo progresivo</h3>
+                    <p>El crecimiento de infraestructura y servicios en zonas emergentes tiende a incrementar el valor de los terrenos de manera orgánica.</p>
+                </div>
+                <div class="inversion-card">
+                    <div class="inversion-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Gestión activa del valor</h3>
+                    <p>Un proyecto bien planificado potencia las características naturales del terreno y su integración con el entorno.</p>
+                </div>
+                <div class="inversion-card">
+                    <div class="inversion-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                            <polyline points="22,4 12,14.01 9,11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Activo tangible</h3>
+                    <p>A diferencia de otros instrumentos, la tierra es un bien real que se puede visitar, desarrollar y transmitir a futuras generaciones.</p>
+                </div>
+            </div>
+            <div class="inversion-note">
+                <p>La decisión de invertir debe basarse en un análisis personal de objetivos y circunstancias. Te invitamos a conocer el proyecto y evaluar si se alinea con tu visión.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tema del Agua -->
+    <section class="section section-agua" id="agua">
+        <div class="container">
+            <div class="agua-content">
+                <div class="agua-text">
+                    <span class="section-tag">Recurso Esencial</span>
+                    <h2 class="section-title">Disponibilidad hídrica</h2>
+                    <p>Uno de los factores más importantes al evaluar un terreno es el acceso al agua. En Mar y Campo, este aspecto ha sido considerado desde el inicio del proyecto.</p>
+                    <ul class="agua-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Disponibilidad hídrica identificada</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Área técnica definida</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Ejecución proyectada</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="agua-visual">
+                    <div class="agua-icon-large">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estado del Proyecto -->
+    <section class="section section-proyecto" id="proyecto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Transparencia</span>
+                <h2 class="section-title">Estado actual del proyecto</h2>
+                <p class="section-subtitle">Creemos en la comunicación honesta sobre el avance de cada etapa</p>
+            </div>
+            <div class="proyecto-status">
+                <div class="status-badge">
+                    <span class="badge-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </span>
+                    <span class="badge-text">Proyecto en Desarrollo</span>
+                </div>
+            </div>
+            <div class="proyecto-timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Planificación general</h4>
+                        <p>Diseño del masterplan y definición de lotes</p>
+                        <span class="timeline-status">Completado</span>
+                    </div>
+                </div>
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Estudios técnicos</h4>
+                        <p>Análisis de suelo, topografía y recursos hídricos</p>
+                        <span class="timeline-status">Completado</span>
+                    </div>
+                </div>
+                <div class="timeline-item in-progress">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Proceso de subdivisión</h4>
+                        <p>Trámites legales y administrativos en curso</p>
+                        <span class="timeline-status">En etapa final</span>
+                    </div>
+                </div>
+                <div class="timeline-item pending">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Infraestructura base</h4>
+                        <p>Caminos internos y servicios básicos</p>
+                        <span class="timeline-status">Proyectado</span>
+                    </div>
+                </div>
+                <div class="timeline-item pending">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Amenidades</h4>
+                        <p>Áreas comunes y espacios recreativos</p>
+                        <span class="timeline-status">Proyectado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto-amenidades">
+                <h3>Amenidades Planificadas</h3>
+                <div class="amenidades-grid">
+                    <div class="amenidad-item">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M18 8h1a4 4 0 010 8h-1"/>
+                            <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                            <line x1="6" y1="1" x2="6" y2="4"/>
+                            <line x1="10" y1="1" x2="10" y2="4"/>
+                            <line x1="14" y1="1" x2="14" y2="4"/>
+                        </svg>
+                        <span>Quincho comunitario</span>
+                    </div>
+                    <div class="amenidad-item">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                            <line x1="4" y1="22" x2="4" y2="15"/>
+                        </svg>
+                        <span>Senderos naturales</span>
+                    </div>
+                    <div class="amenidad-item">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 8v8"/>
+                            <path d="M8 12h8"/>
+                        </svg>
+                        <span>Área de juegos</span>
+                    </div>
+                    <div class="amenidad-item">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <span>Seguridad perimetral</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terrenos Disponibles -->
+    <section class="section section-terrenos" id="terrenos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Oportunidades</span>
+                <h2 class="section-title">Terrenos disponibles</h2>
+                <p class="section-subtitle">Cada lote ha sido diseñado pensando en su potencial y orientación</p>
+            </div>
+            <div class="terrenos-grid">
+                <div class="terreno-card">
+                    <div class="terreno-image" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80');">
+                        <span class="terreno-badge disponible">Disponible</span>
+                    </div>
+                    <div class="terreno-info">
+                        <h3>Lote A-01</h3>
+                        <div class="terreno-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Superficie</span>
+                                <span class="detail-value">1.200 m²</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Orientación</span>
+                                <span class="detail-value">Norte</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Características</span>
+                                <span class="detail-value">Vista al valle</span>
+                            </div>
+                        </div>
+                        <div class="terreno-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price-value">Consultar</span>
+                        </div>
+                        <a href="#contacto" class="btn btn-outline">Más información</a>
+                    </div>
+                </div>
+                <div class="terreno-card">
+                    <div class="terreno-image" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80');">
+                        <span class="terreno-badge disponible">Disponible</span>
+                    </div>
+                    <div class="terreno-info">
+                        <h3>Lote A-02</h3>
+                        <div class="terreno-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Superficie</span>
+                                <span class="detail-value">1.500 m²</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Orientación</span>
+                                <span class="detail-value">Noreste</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Características</span>
+                                <span class="detail-value">Esquina, doble frente</span>
+                            </div>
+                        </div>
+                        <div class="terreno-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price-value">Consultar</span>
+                        </div>
+                        <a href="#contacto" class="btn btn-outline">Más información</a>
+                    </div>
+                </div>
+                <div class="terreno-card">
+                    <div class="terreno-image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80');">
+                        <span class="terreno-badge reservado">Reservado</span>
+                    </div>
+                    <div class="terreno-info">
+                        <h3>Lote B-01</h3>
+                        <div class="terreno-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Superficie</span>
+                                <span class="detail-value">1.350 m²</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Orientación</span>
+                                <span class="detail-value">Este</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Características</span>
+                                <span class="detail-value">Junto a área verde</span>
+                            </div>
+                        </div>
+                        <div class="terreno-price">
+                            <span class="price-label">Estado</span>
+                            <span class="price-value">Reservado</span>
+                        </div>
+                        <button class="btn btn-outline" disabled>No disponible</button>
+                    </div>
+                </div>
+                <div class="terreno-card">
+                    <div class="terreno-image" style="background-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&q=80');">
+                        <span class="terreno-badge disponible">Disponible</span>
+                    </div>
+                    <div class="terreno-info">
+                        <h3>Lote B-02</h3>
+                        <div class="terreno-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Superficie</span>
+                                <span class="detail-value">1.800 m²</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Orientación</span>
+                                <span class="detail-value">Noroeste</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Características</span>
+                                <span class="detail-value">Lote premium, vista panorámica</span>
+                            </div>
+                        </div>
+                        <div class="terreno-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price-value">Consultar</span>
+                        </div>
+                        <a href="#contacto" class="btn btn-outline">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="section section-galeria" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Imágenes</span>
+                <h2 class="section-title">Galería del proyecto</h2>
+                <p class="section-subtitle">Conoce el entorno y las vistas que ofrecen nuestros terrenos</p>
+            </div>
+            <div class="galeria-grid">
+                <div class="galeria-item large" data-src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80" alt="Vista del campo" loading="lazy">
+                    <div class="galeria-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                            <path d="M11 8v6"/>
+                            <path d="M8 11h6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="galeria-item" data-src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1920&q=80">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80" alt="Paisaje natural" loading="lazy">
+                    <div class="galeria-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                            <path d="M11 8v6"/>
+                            <path d="M8 11h6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="galeria-item" data-src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Montañas" loading="lazy">
+                    <div class="galeria-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                            <path d="M11 8v6"/>
+                            <path d="M8 11h6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="galeria-item" data-src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1920&q=80">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&q=80" alt="Naturaleza" loading="lazy">
+                    <div class="galeria-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                            <path d="M11 8v6"/>
+                            <path d="M8 11h6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="galeria-item" data-src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="Bosque" loading="lazy">
+                    <div class="galeria-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                            <path d="M11 8v6"/>
+                            <path d="M8 11h6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="galeria-item" data-src="https://images.unsplash.com/photo-1518173946687-a4c036bc3c95?w=1920&q=80">
+                    <img src="https://images.unsplash.com/photo-1518173946687-a4c036bc3c95?w=600&q=80" alt="Atardecer en el campo" loading="lazy">
+                    <div class="galeria-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                            <path d="M11 8v6"/>
+                            <path d="M8 11h6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Cerrar">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18"/>
+                <path d="M6 6l12 12"/>
+            </svg>
+        </button>
+        <button class="lightbox-prev" aria-label="Anterior">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <button class="lightbox-next" aria-label="Siguiente">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Imagen ampliada" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- Masterplan 360 -->
+    <section class="section section-masterplan" id="masterplan">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experiencia Inmersiva</span>
+                <h2 class="section-title">Masterplan 360°</h2>
+                <p class="section-subtitle">Explora el proyecto completo con nuestra herramienta de visualización interactiva</p>
+            </div>
+            <div class="masterplan-container">
+                <div class="masterplan-viewer" id="masterplanViewer">
+                    <!-- El iframe de Masterplan360 se insertará aquí -->
+                    <!-- Para configurar: reemplazar el contenido con el iframe proporcionado por Masterplan360 -->
+                    <div class="masterplan-placeholder">
+                        <div class="placeholder-content">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20"/>
+                                <path d="M2 12h20"/>
+                            </svg>
+                            <h3>Visor 360° en preparación</h3>
+                            <p>Pronto podrás explorar el masterplan completo del proyecto en una experiencia inmersiva.</p>
+                            <span class="placeholder-note">Espacio reservado para Masterplan360</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="masterplan-instructions">
+                    <p><strong>Instrucciones:</strong> Cuando el visor esté disponible, podrás navegar arrastrando con el mouse, hacer zoom con la rueda y hacer clic en los puntos de interés para más información.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section section-contacto" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hablemos</span>
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">Estamos disponibles para responder tus consultas y coordinar una visita al terreno</p>
+            </div>
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <div class="contacto-item">
+                        <a href="https://wa.me/56912345678?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20Mar%20y%20Campo" class="contacto-link whatsapp" target="_blank" rel="noopener">
+                            <div class="contacto-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </div>
+                            <div class="contacto-text">
+                                <span class="contacto-label">WhatsApp</span>
+                                <span class="contacto-value">+56 9 1234 5678</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contacto-item">
+                        <a href="mailto:info@marycampo.cl" class="contacto-link email">
+                            <div class="contacto-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contacto-text">
+                                <span class="contacto-label">Email</span>
+                                <span class="contacto-value">info@marycampo.cl</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contacto-form-container">
+                    <form class="contacto-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar consulta</button>
+                        <p class="form-note">Este formulario es demostrativo. Para una respuesta inmediata, contáctanos por WhatsApp.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">Mar y Campo</span>
+                    <p>Terrenos con visión de futuro en un entorno natural privilegiado.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#zona">La Zona</a></li>
+                        <li><a href="#inversion">Inversión</a></li>
+                        <li><a href="#proyecto">Proyecto</a></li>
+                        <li><a href="#terrenos">Terrenos</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#masterplan">Masterplan 360</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>WhatsApp: +56 9 1234 5678</p>
+                    <p>Email: info@marycampo.cl</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mar y Campo. Todos los derechos reservados.</p>
+                <p class="footer-legal">Las imágenes son referenciales. Proyecto sujeto a modificaciones.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
