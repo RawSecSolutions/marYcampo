@@ -4,13 +4,13 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all components
     initNavbar();
     initCarousel();
     initLightbox();
     initScrollAnimations();
     initSmoothScroll();
     initContactForm();
+    initVideoBackgrounds();
 });
 
 /**
@@ -81,16 +81,21 @@ function initCarousel() {
     const autoplayDelay = 5000;
 
     function goToSlide(index) {
-        // Handle wrapping
         if (index < 0) index = slides.length - 1;
         if (index >= slides.length) index = 0;
 
-        // Update slides
         slides.forEach((slide, i) => {
             slide.classList.toggle('active', i === index);
+            const video = slide.querySelector('video');
+            if (video) {
+                if (i === index) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                }
+            }
         });
 
-        // Update indicators
         indicators.forEach((indicator, i) => {
             indicator.classList.toggle('active', i === index);
         });
@@ -263,8 +268,8 @@ function initScrollAnimations() {
     const animatedElements = document.querySelectorAll(
         '.section-header, .zona-content, .zona-map, .inversion-card, ' +
         '.agua-text, .agua-visual, .timeline-item, .amenidad-item, ' +
-        '.terreno-card, .galeria-item, .masterplan-container, ' +
-        '.contacto-info, .contacto-form-container'
+        '.galeria-item, .masterplan-container, ' +
+        '.contacto-info, .contacto-simple'
     );
 
     // Add fade-in class
@@ -387,6 +392,43 @@ function loadMasterplan360(url) {
 
 // Expose function globally for easy configuration
 window.loadMasterplan360 = loadMasterplan360;
+
+/**
+ * Video background sections — lazy load + play/pause on visibility.
+ * Avoids relying on the `autoplay` attribute so Chrome's autoplay
+ * policies can't block the videos silently.
+ */
+function initVideoBackgrounds() {
+    const bgVideos = document.querySelectorAll('.video-bg-wrap video');
+    if (!bgVideos.length) return;
+
+    function startVideo(video) {
+        if (video.dataset.loaded) {
+            video.play().catch(() => {});
+            return;
+        }
+        video.setAttribute('preload', 'auto');
+        video.load();
+        video.dataset.loaded = '1';
+        video.addEventListener('canplay', function handler() {
+            video.play().catch(() => {});
+            video.removeEventListener('canplay', handler);
+        });
+    }
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+                startVideo(video);
+            } else {
+                video.pause();
+            }
+        });
+    }, { threshold: 0.05 });
+
+    bgVideos.forEach(video => observer.observe(video));
+}
 
 /**
  * Utility: Debounce function
