@@ -1,0 +1,12 @@
+/*
+  Permissions-Policy: accelerometer=(self "https://virtualplan360.cl"), gyroscope=(self "https://virtualplan360.cl"), magnetometer=(self "https://virtualplan360.cl"), xr-spatial-tracking=(self "https://virtualplan360.cl"), autoplay=(self "https://virtualplan360.cl"), fullscreen=(self "https://virtualplan360.cl")
+
+/*.mp4
+  Content-Type: video/mp4
+  Accept-Ranges: bytes
+  Cache-Control: public, max-age=31536000, immutable
+
+/src/web/*
+  Content-Type: video/mp4
+  Accept-Ranges: bytes
+  Cache-Control: public, max-age=31536000, immutable
